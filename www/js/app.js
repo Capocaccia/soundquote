@@ -17,3 +17,32 @@ angular.module('starter', ['ionic'])
     }
   });
 })
+.controller('playerCtrl', function($scope, $document){
+  $scope.osSound = function(num) {
+    var officespacesounds = ['audio/officespace/dontdoBleep.mp3', 'audio/officespace/nothing.mp3'];
+    var officespaces = new Audio(officespacesounds[num]);
+      addEventListener('load', officespace, false);
+      function officespace() {
+        officespaces.play()
+      }
+      officespace()
+  }
+  $scope.wbSound = function(num) {
+    var waterboysounds = ['audio/waterboy/cuthisheadoff.mp3', 'audio/waterboy/gatorade.mp3', 'audio/waterboy/socialskills.mp3' ];
+    var waterboys = new Audio(waterboysounds[num]);
+      addEventListener('load', waterboy, false);
+      function waterboy() {
+        waterboys.play()
+      }
+      waterboy()
+  }
+  $scope.hrSound = function(num) {
+    var hotrodsounds = [];
+    var hotrods = new Audio(hotrodsounds[num]);
+      addEventListener('load', hotrod, false);
+      function hotrod() {
+        hotrods.play()
+      }
+      hotrod();
+  }
+})
