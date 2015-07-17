@@ -37,7 +37,7 @@ angular.module('starter', ['ionic'])
       waterboy()
   }
   $scope.hrSound = function(num) {
-    var hotrodsounds = [];
+    var hotrodsounds = ['audio/HotRod/bathroom.mp3', 'audio/HotRod/coolbeans.mp3', 'audio/HotRod/quietplace.mp3'];
     var hotrods = new Audio(hotrodsounds[num]);
       addEventListener('load', hotrod, false);
       function hotrod() {
